@@ -21,6 +21,7 @@
 		45BAC26D18FC2D89006270A9 /* HitoriDePingPongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BAC26C18FC2D89006270A9 /* HitoriDePingPongTests.m */; };
 		45BAC27818FC2DC4006270A9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BAC27718FC2DC4006270A9 /* MainViewController.m */; };
 		45BAC27A18FC2F3B006270A9 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BAC27918FC2F3B006270A9 /* CoreMotion.framework */; };
+		45BAC27C18FC31C9006270A9 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAC27B18FC31C9006270A9 /* bg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		45BAC27618FC2DC4006270A9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		45BAC27718FC2DC4006270A9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		45BAC27918FC2F3B006270A9 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		45BAC27B18FC31C9006270A9 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		45BAC24D18FC2D89006270A9 /* HitoriDePingPong */ = {
 			isa = PBXGroup;
 			children = (
+				45BAC27B18FC31C9006270A9 /* bg.png */,
 				45BAC25618FC2D89006270A9 /* AppDelegate.h */,
 				45BAC25718FC2D89006270A9 /* AppDelegate.m */,
 				45BAC25918FC2D89006270A9 /* Images.xcassets */,
@@ -230,6 +233,7 @@
 			files = (
 				45BAC25218FC2D89006270A9 /* InfoPlist.strings in Resources */,
 				45BAC25A18FC2D89006270A9 /* Images.xcassets in Resources */,
+				45BAC27C18FC31C9006270A9 /* bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

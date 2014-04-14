@@ -20,21 +20,26 @@
     if (self) {
         // Custom initialization
         
+        UIImage *image = [UIImage imageNamed:@"bg.png"];
+        UIImageView *iv = [[UIImageView alloc] initWithImage:image];
+        iv.frame = CGRectMake(-1000, -1000, 2000, 2000);
+        [self.view addSubview:iv];
+        
         UILabel *labelX = [[UILabel alloc] init];
         labelX.frame = CGRectMake(10, 20, 100, 20);
-        labelX.textColor = [UIColor blackColor];
+        labelX.textColor = [UIColor whiteColor];
         [self.view addSubview:labelX];
         
         
         UILabel *labelY = [[UILabel alloc] init];
         labelY.frame = CGRectMake(10, 40, 100, 20);
-        labelY.textColor = [UIColor blackColor];
+        labelY.textColor = [UIColor whiteColor];
         [self.view addSubview:labelY];
         
         
         UILabel *labelZ = [[UILabel alloc] init];
         labelZ.frame = CGRectMake(10, 60, 100, 20);
-        labelZ.textColor = [UIColor blackColor];
+        labelZ.textColor = [UIColor whiteColor];
         [self.view addSubview:labelZ];
         
         self.motionManager = [[CMMotionManager alloc] init];
@@ -51,6 +56,11 @@
                 labelX.text = [NSString stringWithFormat:@"x %f", data.acceleration.x];
                 labelY.text = [NSString stringWithFormat:@"y %f", data.acceleration.y];
                 labelZ.text = [NSString stringWithFormat:@"x %f", data.acceleration.z];
+                
+                // 背景を移動
+                iv.frame = CGRectMake(iv.frame.origin.x + (data.acceleration.x * -3),
+                                      iv.frame.origin.y + (data.acceleration.y * 3),
+                                      iv.frame.size.width, iv.frame.size.height);
             };
             
             // 加速度の取得開始
